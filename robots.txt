@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /private
+
+Sitemap: https://davidnovacek.cz/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+Priority: high
+
+User-agent: Bingbot
+Allow: /
+Priority: high

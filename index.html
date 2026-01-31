@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Freelance creative - IT student, střihač a fotograf. Webové projekty, video střih a fotografie. Moderní a responzivní portfolio.">
+    <meta name="keywords" content="freelance, web design, video edit, fotografie, IT, webová tvorba">
+    <meta name="author" content="David Nováček">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="David Nováček | Portfolio 2026">
+    <meta property="og:description" content="Freelance creative - IT student, střihač a fotograf. Webové projekty, video střih a fotografie.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://picsum.photos/id/1015/1200/630">
+    <meta name="theme-color" content="#FF7A59">
+    <title>David Nováček | Portfolio 2026 - Freelance Creative</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%23FF7A59'>D</text></svg>">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "David Nováček",
+      "jobTitle": "Freelance Creative",
+      "description": "IT student, video editor, photographer",
+      "url": "https://davidnovacek.cz",
+      "sameAs": [
+        "https://www.instagram.com/dnovacekk",
+        "https://www.youtube.com/@davideqqq"
+      ],
+      "knowsAbout": ["Web Development", "Video Editing", "Photography", "UI/UX Design"],
+      "workLocation": {
+        "@type": "Place",
+        "name": "Czech Republic"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">David<span>Nováček</span></div>
+        <button id="nav-toggle" aria-label="Otevřít menu" aria-expanded="false"><span></span></button>
+        <ul id="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#foto">Foto</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#web">Web</a></li>
+            <li><a href="#projekty">Projekty</a></li>
+            <li><a href="#reference">Reference</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero" aria-labelledby="home-title">
+        <div class="hero-content">
+            <p class="tagline">FREELANCE CREATIVE</p>
+            <h1 id="home-title" class="gradient-text">Digitální vize</h1>
+            <p>IT student • Střihač • Fotograf</p>
+            <div class="socials">
+                <a target="_blank" href="https://www.instagram.com/dnovacekk?igsh=MTI1N29sdXRwYThreQ%3D%3D&utm_source=qr" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a target="_blank" href="https://www.youtube.com/@davideqqq" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="hero-badges">
+                <div class="badge"><span class="badge-number">50+</span><span class="badge-label">Projektů</span></div>
+                <div class="badge"><span class="badge-number">3+</span><span class="badge-label">Let zkušeností</span></div>
+                <div class="badge"><span class="badge-number">100%</span><span class="badge-label">Spokojení klienti</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="foto" class="sub-section">
+        <h2 class="section-title">Fotografie</h2>
+        <div class="gallery">
+            <a class="gallery-link" href="https://picsum.photos/id/1015/1600/900"><div class="gallery-item"><img loading="lazy" src="https://picsum.photos/id/1015/800/800" alt="Foto 1"></div></a>
+            <a class="gallery-link" href="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=1600"><div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=800" alt="Foto 2"></div></a>
+            <a class="gallery-link" href="https://images.unsplash.com/photo-1554080353-a576cf803bda?auto=format&fit=crop&w=1600"><div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1554080353-a576cf803bda?auto=format&fit=crop&w=800" alt="Foto 3"></div></a>
+            <a class="gallery-link" href="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1600"><div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800" alt="Foto 4"></div></a>
+        </div>
+        <button id="gallery-modal-btn" class="btn" style="margin-top: 30px;">Procházej si celou galerii</button>
+    </section>
+
+    <!-- Plná galerie Modal -->
+    <div id="gallery-modal" class="modal" aria-hidden="true">
+        <div class="modal-content modal-gallery">
+            <button class="modal-close" aria-label="Zavřít galerii">✕</button>
+            <h2 style="margin-bottom: 20px; font-size: 1.8rem;">Moje práce</h2>
+            <div class="full-gallery">
+                <a class="gallery-link" href="https://picsum.photos/id/1015/1600/900"><img loading="lazy" src="https://picsum.photos/id/1015/600/600" alt="Foto"></a>
+                <a class="gallery-link" href="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=1600"><img loading="lazy" src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=600" alt="Foto"></a>
+                <a class="gallery-link" href="https://images.unsplash.com/photo-1554080353-a576cf803bda?auto=format&fit=crop&w=1600"><img loading="lazy" src="https://images.unsplash.com/photo-1554080353-a576cf803bda?auto=format&fit=crop&w=600" alt="Foto"></a>
+                <a class="gallery-link" href="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1600"><img loading="lazy" src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=600" alt="Foto"></a>
+                <a class="gallery-link" href="https://picsum.photos/id/1020/1600/900"><img loading="lazy" src="https://picsum.photos/id/1020/600/600" alt="Foto"></a>
+                <a class="gallery-link" href="https://picsum.photos/id/1021/1600/900"><img loading="lazy" src="https://picsum.photos/id/1021/600/600" alt="Foto"></a>
+                <a class="gallery-link" href="https://picsum.photos/id/1022/1600/900"><img loading="lazy" src="https://picsum.photos/id/1022/600/600" alt="Foto"></a>
+                <a class="gallery-link" href="https://picsum.photos/id/1023/1600/900"><img loading="lazy" src="https://picsum.photos/id/1023/600/600" alt="Foto"></a>
+                <a class="gallery-link" href="https://picsum.photos/id/1024/1600/900"><img loading="lazy" src="https://picsum.photos/id/1024/600/600" alt="Foto"></a>
+                <a class="gallery-link" href="https://picsum.photos/id/1025/1600/900"><img loading="lazy" src="https://picsum.photos/id/1025/600/600" alt="Foto"></a>
+                <a class="gallery-link" href="https://picsum.photos/id/1026/1600/900"><img loading="lazy" src="https://picsum.photos/id/1026/600/600" alt="Foto"></a>
+                <a class="gallery-link" href="https://picsum.photos/id/1027/1600/900"><img loading="lazy" src="https://picsum.photos/id/1027/600/600" alt="Foto"></a>
+            </div>
+        </div>
+    </div>
+
+<section id="video" class="sub-section">
+    <h2 class="section-title">Video & Střih</h2>
+    <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+    <section id="web" class="sub-section">
+        <h2 class="section-title">Webové projekty</h2>
+        <div class="web-grid">
+            <div class="web-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>E-shop Design</h3>
+                <p>Kompletní UI/UX návrh a kódování.</p>
+            </div>
+            <div class="web-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>App Design</h3>
+                <p>Návrh mobilní aplikace pro iOS/Android.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projekty" class="sub-section">
+        <h2 class="section-title">Projekty & Reference</h2>
+        
+        <div class="project-grid">
+            <article class="project-card">
+                <img loading="lazy" src="https://picsum.photos/id/1005/1200/800" alt="E-shop projekt">
+                <div class="project-body">
+                    <h3>E-shop Design</h3>
+                    <p>Kompletní branding, UI/UX a implementace frontendu.</p>
+                    <div class="project-actions">
+                        <button class="btn-outline" type="button" data-title="E-shop Design" data-image="https://picsum.photos/id/1005/1200/800" data-desc="Kompletní branding, UI/UX a implementace frontendu." data-tags="web,e-shop,uiux">Detail</button>
+                        <button class="btn" type="button" data-url="https://demo.opencart.com/">Live</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card" data-tags="video,střih,promo">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200" alt="Video projekt">
+                <div class="project-body">
+                    <h3>Promo Video</h3>
+                    <p>Koncept, střih a barevná korekce krátkého propagačního videa.</p>
+                    <div class="project-actions">
+                        <button class="btn-outline" type="button" data-title="Promo Video" data-image="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200" data-desc="Koncept, střih a barevná korekce krátkého propagačního videa." data-tags="video,střih,promo">Detail</button>
+                        <button class="btn" type="button" data-url="https://vimeo.com/76979871">Ukázka</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card" data-tags="foto,portréty,produkty">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1200" alt="Foto projekt">
+                <div class="project-body">
+                    <h3>Fotografická série</h3>
+                    <p>Autorova série portrétů a produktové fotografie pro malé firmy.</p>
+                    <div class="project-actions">
+                        <button class="btn-outline" type="button" data-title="Fotografická série" data-image="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1200" data-desc="Autorova série portrétů a produktové fotografie pro malé firmy." data-tags="foto,portréty,produkty">Detail</button>
+                        <button class="btn" type="button" data-url="https://unsplash.com/s/photos/photography">Galerie</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="reference" class="sub-section">
+        <h2 class="section-title">Reference</h2>
+        <div class="testimonials-grid">
+            <article class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"David je nepochybně ten nejlepší, se kterým jsem kdy pracoval. Byl velmi profesionální a výsledek překonal všechna moja očekávání. Perfektní komunikace a včasné dodání."</p>
+                <p class="testimonial-author">— <strong>Jan Kovář</strong>, CEO StartupXYZ</p>
+            </article>
+            <article class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Profesionální přístup od prvního kontaktu. David si vzal čas pochopit naše potřeby a vytvořil web, který převyšuje naše představy. Doporučuji bez výhrad!"</p>
+                <p class="testimonial-author">— <strong>Petra Nováková</strong>, Majitelka marketingové agentury</p>
+            </article>
+            <article class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Moje video se díky Davidovi změnilo na profesionální produkt. Detailní přístup a kreativnost jsou jeho velkými silami. Výsledek předčil očekávání!"</p>
+                <p class="testimonial-author">— <strong>Lukáš Svoboda</strong>, Content Creator & Streamer</p>
+            </article>
+            <article class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Fotografie jsou nádherné! David má talent vychytit dokonalý moment. Profesionalita, kreativita a péče o detail. Doporučuji všem, co hledají kvalitního fotografa."</p>
+                <p class="testimonial-author">— <strong>Michaela Hermannová</strong>, Majitelka butiku</p>
+            </article>
+            <article class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Práce s Davidem byla skvělá zkušenost. Velice pečlivě poslouchal mé požadavky a dokázal je převést do vizuální podoby lépe, než jsem si představoval."</p>
+                <p class="testimonial-author">— <strong>Tomáš Beneš</strong>, Projektový manažer</p>
+            </article>
+            <article class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"David není jen výkonný, ale i velmi příjemný člověk na práci. Komunikace byla skvělá a výsledek je přesně takový, jaký jsem chtěl. Budoucí spolupráce bez otázek!"</p>
+                <p class="testimonial-author">— <strong>Alžběta Kučerová</strong>, Obsah tvůce</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="faq" class="sub-section">
+        <h2 class="section-title">Často kladené otázky</h2>
+        <div class="faq-list">
+            <details class="faq-item">
+                <summary class="faq-question">Jaké jsou tvoje sazby?</summary>
+                <p class="faq-answer">Sazby se liší podle typu projektu. Nabízím jednoho consultation call zdarma, kde si všechno probereme.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">Jak dlouho trvá typický projekt?</summary>
+                <p class="faq-answer">Záleží na rozsahu. E-shop: 3-6 týdnů, video střih: 1-2 týdny, fotografie: podle počtu fotek a editace.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">Pracuješ na malé projekty?</summary>
+                <p class="faq-answer">Ano, přijímám projekty všech velikostí. Každý projekt je pro mě důležitý.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">Jaké revize jsou zahrnuty?</summary>
+                <p class="faq-answer">Obvykle 2-3 revize jsou zahrnuty. Další revize se účtují. Domluvíme si konkrétní podmínky na začátku.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">Jak se komunikuje během projektu?</summary>
+                <p class="faq-answer">Běžně přes email, Discord nebo Telegram. Pravidelně si posílíme updaty a feedback.</p>
+            </details>
+        </div>
+    </section>
+
+    <section id="kontakt" class="sub-section">
+        <div class="contact-box">
+            <div id="form-content">
+                <h2 class="section-title">Napiš mi</h2>
+                <form id="my-form" action="https://formspree.io/f/mwvbavor" method="POST">
+                    <input type="text" name="name" placeholder="Jméno" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Tvá zpráva..." rows="5" required></textarea>
+                    <button id="submit-btn" type="submit" class="btn">Odeslat</button>
+                </form>
+            </div>
+            <div id="success-msg" style="display: none;">
+                <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+                <h2 class="section-title">Odesláno!</h2>
+                <p>Díky za zprávu, ozvu se ti co nejdříve.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 | David Nováček</p>
+    </footer>
+
+    <button id="back-to-top" aria-label="Zpět nahoru">↑</button>
+    
+    <div id="project-modal" class="project-modal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-card" role="document">
+            <button class="close-modal" aria-label="Zavřít">&times;</button>
+            <div class="modal-image">
+                <img id="modal-image" src="" alt="Projekt obrázek">
+            </div>
+            <div class="modal-body">
+                <h3 id="modal-title">Název projektu</h3>
+                <p id="modal-desc">Popis projektu</p>
+                <div class="modal-actions">
+                    <a id="modal-live" class="btn" href="#">Otevřít demo</a>
+                    <button id="modal-close-btn" class="btn-outline" type="button">Zavřít</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
